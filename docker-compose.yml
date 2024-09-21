@@ -1,0 +1,23 @@
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    tty: true    
+    ports:
+      - 3000:3000 #frontend
+      - 8080:8080 #APIServer
+    volumes:
+      - type: bind
+        source: .
+        target: /workspace
+        consistency: cached
+      # - type: bind
+      #   source: ./frontend
+      #   target: /workspace/frontend
+      #   consistency: cached
+      # - type: bind
+      #   source: ./backend
+      #   target: /workspace/backend
+      #   consistency: cached   
+

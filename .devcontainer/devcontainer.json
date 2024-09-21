@@ -1,0 +1,29 @@
+{
+    "name": "Node.js React Dev Container",
+    "dockerComposeFile": ["../docker-compose.yml"],
+    "service": "app",
+    "workspaceFolder": "/workspace",
+    "forwardPorts": [3000, 8080],
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "editor.formatOnSave": true,
+                "files.encoding": "utf8"
+            },
+            "extensions": [
+                "esbenp.prettier-vscode",
+                "dbaeumer.vscode-eslint",
+                "dsznajder.es7-react-js-snippets",
+                "VisualStudioExptTeam.vscodeintellicode",
+                "christian-kohler.path-intellisense",
+                // "mhutchie.git-graph",
+                // "donjayamanne.githistory",
+                "oderwat.indent-rainbow",
+                "formulahendry.auto-rename-tag",
+                "vscode-icons-team.vscode-icons",
+                "MariusAlchimavicius.json-to-ts",
+                "wix.vscode-import-cost"
+            ]
+        }
+    }
+}
